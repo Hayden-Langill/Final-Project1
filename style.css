@@ -1,5 +1,5 @@
 #image1 {
-	position: absolute;
+  position: absolute;
 	height: 300px;
 	margin-left: 30%;
 }
@@ -7,6 +7,5 @@
 #image2 {
 	position: absolute;
 	height: 250px;
-	margin-left: 0px;
 	margin-top: 50px;
 }
