@@ -2,13 +2,12 @@ const clicker = document.getElementById('button')
 let timesClicked = 0
 const goal = document.getElementById('goal')
 const code = document.getElementById('input')
-
-clicker.addEventListener('click', add)
-
 const image1 = document.getElementById('image1')
 image1.style.visibility = 'hidden'
 const image2 = document.getElementById('image2')
 image2.style.visibility = 'hidden'
+
+clicker.addEventListener('click', add)
 
 function add () {
   if (timesClicked >= 50 && timesClicked < 300) { /* once you hit 50 you click for x2 the   amount */
