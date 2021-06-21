@@ -17,7 +17,16 @@ function add () {
     timesClicked++
     timesClicked++
     timesClicked++
-  } else if (timesClicked >= 1000) {
+  } else if (timesClicked >= 1000 && timesClicked < 5000) {
+    timesClicked++
+    timesClicked++
+    timesClicked++
+    timesClicked++
+    timesClicked++
+  } else if (timesClicked >= 5000) {
+    timesClicked++
+    timesClicked++
+    timesClicked++
     timesClicked++
     timesClicked++
     timesClicked++
@@ -26,6 +35,8 @@ function add () {
   }
   if (code.value === 'Summer' && timesClicked < 500) {
     timesClicked = 500
+  } else if (code.value === 'Finish' && timesClicked < 10000) {
+    timesClicked = 9900
   }
   // base start without boost
   timesClicked++
@@ -45,6 +56,8 @@ function add () {
     goal.innerHTML = 5000 - timesClicked
     image2.style.visibility = 'visible'
     document.getElementById('body').style.backgroundColor = 'blue'
+  } else if (timesClicked >= 5000 && timesClicked <= 10000) {
+    alert('Your half way there!')
   }
   if (timesClicked === 10000) {
     const audio = new Audio('Legends.webm') // If player gets 10,000 clicks it plays this song
